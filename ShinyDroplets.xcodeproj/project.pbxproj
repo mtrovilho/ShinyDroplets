@@ -14,6 +14,7 @@
 				0C6BC1E51085CD0A00A3914D /* ShellScript */,
 			);
 			dependencies = (
+				98FB30F1166A769E00DDD5AE /* PBXTargetDependency */,
 				0C6BC1D31085CACA00A3914D /* PBXTargetDependency */,
 				0C6BC1D51085CACA00A3914D /* PBXTargetDependency */,
 				0C6BC1D71085CACA00A3914D /* PBXTargetDependency */,
@@ -93,6 +94,14 @@
 		0CB51D940E18D9D10007D46A /* baseDroplet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA6D8140E14DDC800A1D910 /* baseDroplet.m */; };
 		0CB51D950E18D9D10007D46A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		0CB51D960E18D9D40007D46A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		98FB30D1166A754800DDD5AE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98FB30D0166A754800DDD5AE /* Cocoa.framework */; };
+		98FB30E7166A759F00DDD5AE /* scriptClick.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 0C78D9C40E1A357C00CF4444 /* scriptClick.scpt */; };
+		98FB30EA166A75DA00DDD5AE /* scriptClick.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0C8F83A3115B6A4E00800DDE /* scriptClick.txt */; };
+		98FB30EC166A75FC00DDD5AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		98FB30ED166A760600DDD5AE /* baseDroplet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA6D8140E14DDC800A1D910 /* baseDroplet.m */; };
+		98FB30FA166A777700DDD5AE /* SublimeTextDropController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FB30F7166A772800DDD5AE /* SublimeTextDropController.m */; };
+		98FB30FB166A778500DDD5AE /* sublimeTextFinderIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 98FB30F8166A772800DDD5AE /* sublimeTextFinderIcon.icns */; };
+		98FB30FC166A778900DDD5AE /* SublimeTextDrop.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98FB30F5166A772800DDD5AE /* SublimeTextDrop.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +160,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 0C81498A0FF0E00C00F35263;
 			remoteInfo = EspressoDrop;
+		};
+		98FB30F0166A769E00DDD5AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98FB30CD166A754800DDD5AE;
+			remoteInfo = SublimeTextDrop;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -213,6 +229,13 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* ShinyDroplets_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShinyDroplets_Prefix.pch; sourceTree = "<group>"; };
+		98FB30CE166A754800DDD5AE /* SublimeTextDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SublimeTextDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		98FB30D0166A754800DDD5AE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		98FB30F4166A771100DDD5AE /* SublimeTextDrop-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SublimeTextDrop-Info.plist"; sourceTree = "<group>"; };
+		98FB30F5166A772800DDD5AE /* SublimeTextDrop.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SublimeTextDrop.xib; path = sublimeTextDrop/SublimeTextDrop.xib; sourceTree = "<group>"; };
+		98FB30F6166A772800DDD5AE /* SublimeTextDropController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SublimeTextDropController.h; path = sublimeTextDrop/SublimeTextDropController.h; sourceTree = "<group>"; };
+		98FB30F7166A772800DDD5AE /* SublimeTextDropController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SublimeTextDropController.m; path = sublimeTextDrop/SublimeTextDropController.m; sourceTree = "<group>"; };
+		98FB30F8166A772800DDD5AE /* sublimeTextFinderIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = sublimeTextFinderIcon.icns; path = sublimeTextDrop/sublimeTextFinderIcon.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +303,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		98FB30CB166A754800DDD5AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98FB30D1166A754800DDD5AE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -328,6 +359,7 @@
 		0CA5407E110C6E8F0074B2F4 /* Droplets */ = {
 			isa = PBXGroup;
 			children = (
+				98FB30F9166A773700DDD5AE /* SublimeTextDrop */,
 				0C8149910FF0E02000F35263 /* espressoDrop */,
 				0CB51D860E18D8BF0007D46A /* SmultronDrop */,
 				0CB51D510E18D3BD0007D46A /* BBEditDrop */,
@@ -441,6 +473,7 @@
 				0CB51D440E18D3650007D46A /* bbeditDrop.app */,
 				0CB51D800E18D7F60007D46A /* SmultronDrop.app */,
 				0C81498B0FF0E00C00F35263 /* EspressoDrop.app */,
+				98FB30CE166A754800DDD5AE /* SublimeTextDrop.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -471,9 +504,22 @@
 			isa = PBXGroup;
 			children = (
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				98FB30D0166A754800DDD5AE /* Cocoa.framework */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98FB30F9166A773700DDD5AE /* SublimeTextDrop */ = {
+			isa = PBXGroup;
+			children = (
+				98FB30F5166A772800DDD5AE /* SublimeTextDrop.xib */,
+				98FB30F8166A772800DDD5AE /* sublimeTextFinderIcon.icns */,
+				98FB30F6166A772800DDD5AE /* SublimeTextDropController.h */,
+				98FB30F7166A772800DDD5AE /* SublimeTextDropController.m */,
+				98FB30F4166A771100DDD5AE /* SublimeTextDrop-Info.plist */,
+			);
+			name = SublimeTextDrop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -615,6 +661,23 @@
 			productReference = 0CB51D800E18D7F60007D46A /* SmultronDrop.app */;
 			productType = "com.apple.product-type.application";
 		};
+		98FB30CD166A754800DDD5AE /* SublimeTextDrop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98FB30E4166A754800DDD5AE /* Build configuration list for PBXNativeTarget "SublimeTextDrop" */;
+			buildPhases = (
+				98FB30CC166A754800DDD5AE /* Resources */,
+				98FB30EB166A75EF00DDD5AE /* Sources */,
+				98FB30CB166A754800DDD5AE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SublimeTextDrop;
+			productName = SublimeTextDrop;
+			productReference = 98FB30CE166A754800DDD5AE /* SublimeTextDrop.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -640,6 +703,7 @@
 				0CB51D430E18D3650007D46A /* BBEditDrop */,
 				0CB51D7F0E18D7F60007D46A /* SmultronDrop */,
 				0C81498A0FF0E00C00F35263 /* EspressoDrop */,
+				98FB30CD166A754800DDD5AE /* SublimeTextDrop */,
 			);
 		};
 /* End PBXProject section */
@@ -730,6 +794,17 @@
 				0CB51D900E18D9A60007D46A /* smultronFinderIcon.icns in Resources */,
 				0CA5404D110C6BC90074B2F4 /* SmultronDrop.xib in Resources */,
 				0C8F83A8115B6A4F00800DDE /* scriptClick.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98FB30CC166A754800DDD5AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98FB30E7166A759F00DDD5AE /* scriptClick.scpt in Resources */,
+				98FB30FB166A778500DDD5AE /* sublimeTextFinderIcon.icns in Resources */,
+				98FB30FC166A778900DDD5AE /* SublimeTextDrop.xib in Resources */,
+				98FB30EA166A75DA00DDD5AE /* scriptClick.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -833,6 +908,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		98FB30EB166A75EF00DDD5AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98FB30ED166A760600DDD5AE /* baseDroplet.m in Sources */,
+				98FB30EC166A75FC00DDD5AE /* main.m in Sources */,
+				98FB30FA166A777700DDD5AE /* SublimeTextDropController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -875,6 +960,11 @@
 			isa = PBXTargetDependency;
 			target = 0C81498A0FF0E00C00F35263 /* EspressoDrop */;
 			targetProxy = 0C6BC1E01085CACA00A3914D /* PBXContainerItemProxy */;
+		};
+		98FB30F1166A769E00DDD5AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98FB30CD166A754800DDD5AE /* SublimeTextDrop */;
+			targetProxy = 98FB30F0166A769E00DDD5AE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1302,6 +1392,59 @@
 			};
 			name = Release;
 		};
+		98FB30E5166A754800DDD5AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/SublimeTextDrop-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		98FB30E6166A754800DDD5AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/SublimeTextDrop-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1411,6 +1554,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		98FB30E4166A754800DDD5AE /* Build configuration list for PBXNativeTarget "SublimeTextDrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98FB30E5166A754800DDD5AE /* Debug */,
+				98FB30E6166A754800DDD5AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ShinyDroplets" */ = {
 			isa = XCConfigurationList;
